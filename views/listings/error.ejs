@@ -1,0 +1,37 @@
+<!-- views/error.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="/path_to_css_file/style.css">
+    <style>
+        body {
+            background-color: #f8d7da;
+            color: #721c24;
+            font-family: Arial, sans-serif;
+        }
+        .error-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            padding: 20px;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Error Occurred!</h1>
+        <div class="error-message">
+            <p><%= errorMessage %></p>
+            <a href="/listings/new">Go Back to the Form</a>
+        </div>
+    </div>
+</body>
+</html>
